@@ -66,11 +66,11 @@ function WebtoonDetail() {
                   </div>
                   <div className="anime__details__rating">
                     <div className="rating">
-                      <a href="#"><i className="fa fa-star"></i></a>
-                      <a href="#"><i className="fa fa-star"></i></a>
-                      <a href="#"><i className="fa fa-star"></i></a>
-                      <a href="#"><i className="fa fa-star"></i></a>
-                      <a href="#"><i className="fa fa-star-half-o"></i></a>
+                      <a href="/"><i className="fa fa-star"></i></a>
+                      <a href="/"><i className="fa fa-star"></i></a>
+                      <a href="/"><i className="fa fa-star"></i></a>
+                      <a href="/"><i className="fa fa-star"></i></a>
+                      <a href="/"><i className="fa fa-star-half-o"></i></a>
                     </div>
                     <span>{webtoon.views} Views</span>
                   </div>
@@ -97,8 +97,8 @@ function WebtoonDetail() {
                   </div>
 
                   <div className="anime__details__btn">
-                    <a href="#" className="follow-btn"><i className="fa fa-heart-o"></i> Follow</a>
-                    <a href="#" className="watch-btn"><span>Watch Now</span> <i className="fa fa-angle-right"></i></a>
+                    <a href="/" className="follow-btn"><i className="fa fa-heart-o"></i> Follow</a>
+                    <a href="/" className="watch-btn"><span>Watch Now</span> <i className="fa fa-angle-right"></i></a>
                   </div>
                 </div>
               </div>
@@ -144,7 +144,7 @@ function WebtoonDetail() {
                       <img src={episode.img} alt={`Episode ${episode.episodeNumber}`} />
                       <div className="ep">Ep {episode.episodeNumber}</div>
                       <div className="view"><i className="fa fa-eye"></i> {episode.views}</div>
-                      <h5><a href="#">Episode {episode.episodeNumber} - {episode.duration}</a></h5>
+                      <h5><a href="/">Episode {episode.episodeNumber} - {episode.duration}</a></h5>
                     </div>
                   ))}
                 </div>

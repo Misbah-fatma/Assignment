@@ -93,7 +93,7 @@ function HomePage() {
                                 <div className="label">Adventure</div>
                                 <h2>Fate / Stay Night: Unlimited Blade Works</h2>
                                 <p>After 30 days of travel across the world...</p>
-                                <a href="#">
+                                <a href="/">
                                     <span>Watch Now</span>
                                     <i className="fa fa-angle-right" style={{
                                         fontSize: '20px',
@@ -113,7 +113,7 @@ function HomePage() {
                                 <div className="label">Adventure</div>
                                 <h2>Another Adventure</h2>
                                 <p>Explore the mysteries in a new world...</p>
-                                <a href="#"><span>Watch Now</span> <i className="fa fa-angle-right" style={{
+                                <a href="/"><span>Watch Now</span> <i className="fa fa-angle-right" style={{
                                     fontSize: '20px',
                                     display: 'inline-block',
                                     backgroundColor: '#e53637',
@@ -130,7 +130,7 @@ function HomePage() {
                                 <div className="label">Action</div>
                                 <h2>Action Thriller</h2>
                                 <p>Join the hero on an action-packed journey...</p>
-                                <a href="#"><span>Watch Now</span> <i className="fa fa-angle-right" style={{
+                                <a href="/"><span>Watch Now</span> <i className="fa fa-angle-right" style={{
                                     fontSize: '20px',
                                     display: 'inline-block',
                                     backgroundColor: '#e53637',
@@ -195,7 +195,7 @@ function HomePage() {
                                         </div>
                                         <div className="col-lg-4 col-md-4 col-sm-4">
                                             <div className="btn__all">
-                                                <a href="#" className="primary-btn">View All <span className="arrow_right"></span></a>
+                                                <a href="/" className="primary-btn">View All <span className="arrow_right"></span></a>
                                             </div>
                                         </div>
                                     </div>
@@ -214,7 +214,7 @@ function HomePage() {
                                                             <li>Active</li>
                                                             <li>Movie</li>
                                                         </ul>
-                                                        <h5><a href="#">{popular.name}</a></h5>
+                                                        <h5><a href="/">{popular.name}</a></h5>
 
                                                     </div>
                                                 </div>
@@ -242,31 +242,31 @@ function HomePage() {
                                             <img src="/assets/img/sidebar/tv-1.jpg" alt="Boruto: Naruto Next Generations" class="set-bg" />
                                             <div class="ep">18 / ?</div>
                                             <div class="view"><i class="fa fa-eye"></i> 9141</div>
-                                            <h5><a href="#">Boruto: Naruto Next Generations</a></h5>
+                                            <h5><a href="/">Boruto: Naruto Next Generations</a></h5>
                                         </div>
                                         <div class="product__sidebar__view__item mix month week">
                                             <img src="/assets/img/sidebar/tv-2.jpg" alt="The Seven Deadly Sins: Wrath of the Gods" class="set-bg" />
                                             <div class="ep">18 / ?</div>
                                             <div class="view"><i class="fa fa-eye"></i> 9141</div>
-                                            <h5><a href="#">The Seven Deadly Sins: Wrath of the Gods</a></h5>
+                                            <h5><a href="/">The Seven Deadly Sins: Wrath of the Gods</a></h5>
                                         </div>
                                         <div class="product__sidebar__view__item mix week years">
                                             <img src="/assets/img/sidebar/tv-3.jpg" alt="Sword Art Online: Alicization - War of Underworld" class="set-bg" />
                                             <div class="ep">18 / ?</div>
                                             <div class="view"><i class="fa fa-eye"></i> 9141</div>
-                                            <h5><a href="#">Sword Art Online: Alicization - War of Underworld</a></h5>
+                                            <h5><a href="/">Sword Art Online: Alicization - War of Underworld</a></h5>
                                         </div>
                                         <div class="product__sidebar__view__item mix years month">
                                             <img src="/assets/img/sidebar/tv-4.jpg" alt="Fate/stay night: Heaven's Feel I. Presage Flower" class="set-bg" />
                                             <div class="ep">18 / ?</div>
                                             <div class="view"><i class="fa fa-eye"></i> 9141</div>
-                                            <h5><a href="#">Fate/stay night: Heaven's Feel I. Presage Flower</a></h5>
+                                            <h5><a href="/">Fate/stay night: Heaven's Feel I. Presage Flower</a></h5>
                                         </div>
                                         <div class="product__sidebar__view__item mix day">
                                             <img src="/assets/img/sidebar/tv-5.jpg" alt="Fate/Stay Night: Unlimited Blade Works" class="set-bg" />
                                             <div class="ep">18 / ?</div>
                                             <div class="view"><i class="fa fa-eye"></i> 9141</div>
-                                            <h5><a href="#">Fate/Stay Night: Unlimited Blade Works</a></h5>
+                                            <h5><a href="/">Fate/Stay Night: Unlimited Blade Works</a></h5>
                                         </div>
                                     </div>
                                 </div>
@@ -284,7 +284,7 @@ function HomePage() {
                                                 <li>Active</li>
                                                 <li>Movie</li>
                                             </ul>
-                                            <h5><a href="#">The Seven Deadly Sins: Wrath of the Gods</a></h5>
+                                            <h5><a href="/">The Seven Deadly Sins: Wrath of the Gods</a></h5>
                                             <span><i class="fa fa-eye"></i> 19,141 Views</span>
                                         </div>
                                     </div>
@@ -297,7 +297,7 @@ function HomePage() {
                                                 <li>Active</li>
                                                 <li>Movie</li>
                                             </ul>
-                                            <h5><a href="#">Shirogane Tamashii hen Kouhan sen</a></h5>
+                                            <h5><a href="/">Shirogane Tamashii hen Kouhan sen</a></h5>
                                             <span><i class="fa fa-eye"></i> 19,141 Views</span>
                                         </div>
                                     </div>
@@ -310,7 +310,7 @@ function HomePage() {
                                                 <li>Active</li>
                                                 <li>Movie</li>
                                             </ul>
-                                            <h5><a href="#">Kizumonogatari III: Reiket su-hen</a></h5>
+                                            <h5><a href="/">Kizumonogatari III: Reiket su-hen</a></h5>
                                             <span><i class="fa fa-eye"></i> 19,141 Views</span>
                                         </div>
                                     </div>
@@ -323,7 +323,7 @@ function HomePage() {
                                                 <li>Active</li>
                                                 <li>Movie</li>
                                             </ul>
-                                            <h5><a href="#">Monogatari Series: Second Season</a></h5>
+                                            <h5><a href="/">Monogatari Series: Second Season</a></h5>
                                             <span><i class="fa fa-eye"></i> 19,141 Views</span>
                                         </div>
                                     </div>
@@ -338,25 +338,25 @@ function HomePage() {
             <img src="/assets/img/sidebar/tv-1.jpg" alt="Boruto: Naruto next generations" />
             <div class="ep">18 / ?</div>
             <div class="view"><i class="fa fa-eye"></i> 9141</div>
-            <h5><a href="#">Boruto: Naruto next generations</a></h5>
+            <h5><a href="/">Boruto: Naruto next generations</a></h5>
         </div>
         <div class="product__sidebar__view__item">
             <img src="/assets/img/sidebar/tv-2.jpg" alt="The Seven Deadly Sins: Wrath of the Gods" />
             <div class="ep">18 / ?</div>
             <div class="view"><i class="fa fa-eye"></i> 9141</div>
-            <h5><a href="#">The Seven Deadly Sins: Wrath of the Gods</a></h5>
+            <h5><a href="/">The Seven Deadly Sins: Wrath of the Gods</a></h5>
         </div>
         <div class="product__sidebar__view__item">
             <img src="/assets/img/sidebar/tv-3.jpg" alt="Sword Art Online: Alicization - War of Underworld" />
             <div class="ep">18 / ?</div>
             <div class="view"><i class="fa fa-eye"></i> 9141</div>
-            <h5><a href="#">Sword Art Online: Alicization - War of Underworld</a></h5>
+            <h5><a href="/">Sword Art Online: Alicization - War of Underworld</a></h5>
         </div>
         <div class="product__sidebar__view__item">
             <img src="/assets/img/sidebar/tv-4.jpg" alt="Fate/stay night: Heaven's Feel I. Presage Flower" />
             <div class="ep">18 / ?</div>
             <div class="view"><i class="fa fa-eye"></i> 9141</div>
-            <h5><a href="#">Fate/stay night: Heaven's Feel I. Presage Flower</a></h5>
+            <h5><a href="/">Fate/stay night: Heaven's Feel I. Presage Flower</a></h5>
         </div>
     </div>
 </div>
