@@ -12,12 +12,12 @@ function HomePage() {
     const [popular, setPopular] = useState([]);
     const [likedItems, setLikedItems] = useState({});
     const [floatingHeart, setFloatingHeart] = useState(null);
- 
+
 
     useEffect(() => {
         const fetchWebtoons = async () => {
           try {
-            const response = await axios.get('https://ghackk-technologies-assignment.onrender.com/api/webtoons');
+            const response = await axios.get('https://backend-r9ii.onrender.com/api/webtoons');
             setWebtoons(response.data);
           } catch (error) {
             console.error('Error fetching webtoons:', error);
@@ -30,7 +30,7 @@ function HomePage() {
       useEffect(() => {
         const fetchPopular = async () => {
           try {
-            const response = await axios.get('https://ghackk-technologies-assignment.onrender.com/api/popular');
+            const response = await axios.get('https://backend-r9ii.onrender.com/api/popular');
             setPopular(response.data);
           } catch (error) {
             console.error('Error fetching popular webtoons:', error);
@@ -42,15 +42,16 @@ function HomePage() {
     
       const handleLike = async (webtoon) => {
         const token = localStorage.getItem('user');
-        const userId = localStorage.getItem('userId');
-    
+        const storedUser = localStorage.getItem('user');
+        const userId = JSON.parse(storedUser);
+        console.log(userId._id);
         if (!token || !userId) {
           console.error('No token or userId found');
           return;
         }
     
         try {
-          await axios.post('https://ghackk-technologies-assignment.onrender.com/api/favourites/like', {
+          await axios.post('https://backend-r9ii.onrender.com/api/favourites/like', {
             userId,
             webtoonId: webtoon._id,
           }, {

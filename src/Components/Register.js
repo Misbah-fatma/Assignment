@@ -7,13 +7,13 @@ const Register = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const navigate = useNavigate();
-
+ 
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
     try {
-      const response = await axios.post('https://ghackk-technologies-assignment.onrender.com/api/register', {
+      const response = await axios.post('https://backend-r9ii.onrender.com/api/register', {
         username,
         email,
         password,

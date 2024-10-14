@@ -7,12 +7,13 @@ function WebtoonDetail() {
   const { id } = useParams(); // Extract the webtoon ID from the URL
   const [webtoon, setWebtoon] = useState(null);
   const [error, setError] = useState(null);
+ 
 
   useEffect(() => {
     // Fetch webtoon details from the backend using the ID
     const fetchWebtoonDetails = async () => {
       try {
-        const response = await axios.get(`https://ghackk-technologies-assignment.onrender.com/api/webtoons/${id}`);
+        const response = await axios.get(`https://backend-r9ii.onrender.com/api/webtoons/${id}`);
         setWebtoon(response.data); // Set webtoon data
       } catch (err) {
         setError(err.response ? err.response.data.message : 'Failed to fetch webtoon details');
