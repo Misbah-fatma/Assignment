@@ -3,9 +3,7 @@ import axios from "axios";
 
 const Favorites = () => {
   const [favorites, setFavorites] = useState([]);
-  const [username, setUsername] = useState(null);
   const [userId, setuserId] = useState(null);
-  const axiosInstance = axios.create({baseURL: process.env.REACT_APP_API_URL});
 
   useEffect(() => {
     const storedUser = localStorage.getItem('user');
@@ -14,7 +12,6 @@ const Favorites = () => {
         const user = JSON.parse(storedUser);
         console.log(user)
         if (user && user.username) {
-          setUsername(user.username);
           setuserId(user._id);
           console.log(user);
         }
@@ -64,7 +61,7 @@ const Favorites = () => {
                   </div>
                   <div className="col-lg-4 col-md-4 col-sm-4">
                     <div className="btn__all">
-                      <a className="primary-btn"> All <span className="arrow_right"></span></a>
+                      <a href="/" className="primary-btn"> All <span className="arrow_right"></span></a>
                     </div>
                   </div>
                 </div>
@@ -84,7 +81,7 @@ const Favorites = () => {
                                 <li>{fav.webtoonId.categorie}</li> {/* Fixed typo from 'category' */}
                                 <li>{fav.webtoonId.studio}</li>
                               </ul>
-                              <h5><a>{fav.webtoonId.name}</a></h5>
+                              <h5><a  href="/">{fav.webtoonId.name}</a></h5>
                               <p className='text-white'>{fav.webtoonId.description}</p>
                             </div>
                           </div>

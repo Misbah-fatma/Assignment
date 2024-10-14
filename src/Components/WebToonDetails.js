@@ -7,7 +7,6 @@ function WebtoonDetail() {
   const { id } = useParams(); // Extract the webtoon ID from the URL
   const [webtoon, setWebtoon] = useState(null);
   const [error, setError] = useState(null);
-  const axiosInstance = axios.create({baseURL: process.env.REACT_APP_API_URL});
 
   useEffect(() => {
     // Fetch webtoon details from the backend using the ID

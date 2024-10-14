@@ -12,7 +12,7 @@ function HomePage() {
     const [popular, setPopular] = useState([]);
     const [likedItems, setLikedItems] = useState({});
     const [floatingHeart, setFloatingHeart] = useState(null);
-    const axiosInstance = axios.create({baseURL: process.env.REACT_APP_API_URL});
+ 
 
     useEffect(() => {
         const fetchWebtoons = async () => {
@@ -180,7 +180,7 @@ function HomePage() {
                                                     <p className="text-white">{webtoon.description}</p>
                                                 </div>
                                                 <div class="button-container">
-<button class="button-73" onClick={() => handleLike(webtoon)} role="button">Add to Favourite</button>
+<button class="button-73" onClick={() => handleLike(webtoon)}>Add to Favourite</button>
                                             </div>
                                             </div>
                                         </div>
